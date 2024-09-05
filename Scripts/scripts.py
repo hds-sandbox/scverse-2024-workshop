@@ -22,3 +22,15 @@ def rename_clusters(names_dict, names_obs):
     split_array = [ i.split('.')[0] for i in cluster_array ]
     clusters = pd.Categorical(split_array)
     return clusters
+
+###use scores instead of manual names (as above) to rename clusters
+def clustersByScores(adata, markers_scores, leidenClusters):
+    clusters = pd.Categorical(leidenClusters)
+    scoresTable = adata.obs[markers_scores]
+    clusterUnique = np.unique(leidenClusters)
+    newNames = pd.Series(index=leidenClusters)
+    for CLST in clusterUnique:
+        meanScores = np.mean( scoresTable.loc[leidenClusters==CLST,:], 0)
+        newId = meanScores.index[ np.argmax(meanScores) ].split('_')[0]
+        newNames[CLST] = newId
+    return(pd.Categorical(newNames))
