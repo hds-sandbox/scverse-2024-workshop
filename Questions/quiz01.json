@@ -1,0 +1,33 @@
+[
+    {
+        "question": "The tSNE plots above have changed their shape a lot by increasing the perplexity. What does the perplexity parameter controls?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "How much the neighborhood of each point stretches to include other points",
+                "correct": true,
+                "feedback": "Correct!"
+            },
+            {
+                "answer": "The number of dimensions to include in the projection",
+                "correct": true,
+                "feedback": "Nope :("
+            },
+            {
+                "answer": "The speed to determine the embedding",
+                "correct": true,
+                "feedback": "Nein :("
+            },
+            {
+                "answer": " The balance between local and global structure when calculating similarities between points.",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Live snakes via Python",
+                "correct": false,
+                "feedback": "Not really!"
+            }
+        ]
+    }
+]
