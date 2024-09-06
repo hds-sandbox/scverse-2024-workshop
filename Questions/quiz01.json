@@ -14,7 +14,7 @@
                 "feedback": "Nope :("
             },
             {
-                "answer": "The speed to determine the embedding",
+                "answer": "The speed to determine the embedding using PCA",
                 "correct": false,
                 "feedback": "Nein :("
             },
@@ -22,11 +22,6 @@
                 "answer": "The balance between local and global structure when calculating similarities between points.",
                 "correct": true,
                 "feedback": "Yes! A higher perplexity will consider similarities also for points more far away, keeping more of the global structure of the data in the projection."
-            },
-            {
-                "answer": "Live snakes via Python",
-                "correct": false,
-                "feedback": "Not really!"
             }
         ]
     }

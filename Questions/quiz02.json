@@ -1,0 +1,28 @@
+[
+    {
+        "question": "Which of these are used to create formatted text in Jupyter notebooks?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "control the learning rate and momentum of the optimization process through stochastic gradient descent.",
+                "correct": false,
+                "feedback": "False. Those parameters can be tuned separately, but their standard value is usually fine."
+            },
+            {
+                "answer": "the number of neighbors considered and the distance metric used for mapping points.",
+                "correct": false,
+                "feedback": "False. There is another parameter to decide the number of neighbors. In general, remember it is better to have a high number of neighbors to avoid false separation of clusters."
+            },
+            {
+                "answer": "how distances between points are stretched or compressed in the projection, influencing how spread out or tightly clustered the points appear.",
+                "correct": true,
+                "feedback": "Correct. The two parameters control the weight of the attractive and repulsive terms of the loss function which is optimized. The parameter a increases the preservation of global structure, while b privileges the repulsive terms which privilege local structure."
+            },
+            {
+                "answer": "The subsampling of data points and dimension to speed up the projection in low dimensional space.",
+                "correct": false,
+                "feedback": "False. Generally you do not subsample data and dimensions to create a projection."
+            }
+        ]
+    }
+]
