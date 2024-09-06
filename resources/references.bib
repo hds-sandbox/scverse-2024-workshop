@@ -1,23 +1,145 @@
-@article{Garcia2020,
-abstract = {Everything we do today is becoming more and more reliant on the use of computers. The field of biology is no exception; but most biologists receive little or no formal preparation for the increasingly computational aspects of their discipline. In consequence, informal training courses are often needed to plug the gaps; and the demand for such training is growing worldwide. To meet this demand, some training programs are being expanded, and new ones are being developed. Key to both scenarios is the creation of new course materials. Rather than starting from scratch, however, it's sometimes possible to repurpose materials that already exist. Yet finding suitable materials online can be difficult: They're often widely scattered across the internet or hidden in their home institutions, with no systematic way to find them. This is a common problem for all digital objects. The scientific community has attempted to address this issue by developing a set of rules (which have been called the Findable, Accessible, Interoperable and Reusable [FAIR] principles) to make such objects more findable and reusable. Here, we show how to apply these rules to help make training materials easier to find, (re)use, and adapt, for the benefit of all.},
-author = {Garcia, Leyla and Batut, B{\'{e}}r{\'{e}}nice and Burke, Melissa L. and Kuzak, Mateusz and Psomopoulos, Fotis and Arcila, Ricardo and Attwood, Teresa K. and Beard, Niall and Carvalho-Silva, Denise and Dimopoulos, Alexandros C. and {Del Angel}, Victoria Dominguez and Dumontier, Michel and Gurwitz, Kim T. and Krause, Roland and McQuilton, Peter and {Le Pera}, Loredana and Morgan, Sarah L. and Rauste, P{\"{a}}ivi and Via, Allegra and Kahlem, Pascal and Rustici, Gabriella and {Van Gelder}, Celia W.G. and Palagi, Patricia M.},
-doi = {10.1371/journal.pcbi.1007854},
-file = {:Users/geertvangeest/Downloads/pcbi.1007854.pdf:pdf},
-isbn = {1111111111},
-issn = {15537358},
-journal = {PLoS Computational Biology},
-number = {5},
-pages = {1--9},
-pmid = {32437350},
-title = {{Ten simple rules for making training materials FAIR}},
-volume = {16},
-year = {2020}
+
+@misc{sidarta-oliveira_topometry_2022,
+	title = {{TopOMetry} systematically learns and evaluates the latent dimensions of single-cell atlases},
+	url = {http://biorxiv.org/lookup/doi/10.1101/2022.03.14.484134},
+	doi = {10.1101/2022.03.14.484134},
+	abstract = {Abstract
+          
+            A core task in single-cell data analysis is recovering the latent dimensions encoding the genetic and epigenetic landscapes inhabited by cell types and lineages. However, consensus is lacking for optimal modeling and visualization approaches. Here, we propose these landscapes are ideally modeled as Riemannian manifolds, and present TopOMetry, a computational toolkit based on Laplacian-type operators to learn these manifolds. TopOMetry learns and evaluates dozens of possible representations systematically, eliminating the need to choose a single dimensional reduction method
+            a priori
+            . The learned visualizations preserve more original information than current PCA-based standards across single-cell and non-biological datasets. TopOMetry allows users to estimate intrinsic dimensionalities and visualize distortions with the Riemannian metric, among other challenging tasks. Illustrating its hypothesis generation power, TopOMetry suggests the existence of dozens of novel T cell subpopulations consistently found across public datasets that correspond to specific clonotypes. TopOMetry is available at
+            https://github.com/davisidarta/topometry
+            .},
+	language = {en},
+	urldate = {2024-09-06},
+	author = {Sidarta-Oliveira, Davi and Domingos, Ana and Velloso, Licio A.},
+	month = mar,
+	year = {2022},
 }
 
+@article{mcinnes_umap:_2018,
+	title = {{UMAP}: {Uniform} {Manifold} {Approximation} and {Projection} for {Dimension} {Reduction}},
+	copyright = {arXiv.org perpetual, non-exclusive license},
+	shorttitle = {{UMAP}},
+	url = {https://arxiv.org/abs/1802.03426},
+	doi = {10.48550/ARXIV.1802.03426},
+	abstract = {UMAP (Uniform Manifold Approximation and Projection) is a novel manifold learning technique for dimension reduction. UMAP is constructed from a theoretical framework based in Riemannian geometry and algebraic topology. The result is a practical scalable algorithm that applies to real world data. The UMAP algorithm is competitive with t-SNE for visualization quality, and arguably preserves more of the global structure with superior run time performance. Furthermore, UMAP has no computational restrictions on embedding dimension, making it viable as a general purpose dimension reduction technique for machine learning.},
+	urldate = {2024-09-06},
+	author = {McInnes, Leland and Healy, John and Melville, James},
+	year = {2018},
+	keywords = {Machine Learning (stat.ML), Computational Geometry (cs.CG), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+}
 
-@misc{creative_commons_2022, 
-title={When we share, everyone wins}, 
-url={https://creativecommons.org/}, 
-publisher={Creative Commons}, 
-note = {Accessed: 2022-08-11}
-} 
+@article{maaten_visualizing_2008,
+	title = {Visualizing {Data} using t-{SNE}},
+	volume = {9},
+	issn = {1533-7928},
+	url = {http://jmlr.org/papers/v9/vandermaaten08a.html},
+	abstract = {We present a new technique called "t-SNE" that visualizes
+high-dimensional data by giving each datapoint a location in a two or
+three-dimensional map. The technique is a variation of Stochastic
+Neighbor Embedding (Hinton and Roweis, 2002) that is much easier to optimize,
+and produces significantly better visualizations by reducing the
+tendency to crowd points together in the center of the map. t-SNE is
+better than existing techniques at creating a single map that reveals
+structure at many different scales. This is particularly important for
+high-dimensional data that lie on several different, but related,
+low-dimensional manifolds, such as images ofobjects from multiple
+classes seen from multiple viewpoints. For visualizing the structure
+of very large data sets, we show how t-SNE can use random walks on
+neighborhood graphs to allow the implicit structure of all of the data
+to influence the way in which a subset of the data is displayed. We
+illustrate the performance of t-SNE on a wide variety of data sets and
+compare it with many other non-parametric visualization techniques,
+including Sammon mapping, Isomap, and Locally Linear Embedding. The
+visualizations produced by t-SNE are significantly better than those
+produced by the other techniques on almost all of the data sets.},
+	number = {86},
+	urldate = {2024-09-06},
+	journal = {Journal of Machine Learning Research},
+	author = {Maaten, Laurens van der and Hinton, Geoffrey},
+	year = {2008},
+	pages = {2579--2605},
+}
+
+@article{amid_trimap:_2019,
+	title = {{TriMap}: {Large}-scale {Dimensionality} {Reduction} {Using} {Triplets}},
+	copyright = {arXiv.org perpetual, non-exclusive license},
+	shorttitle = {{TriMap}},
+	url = {https://arxiv.org/abs/1910.00204},
+	doi = {10.48550/ARXIV.1910.00204},
+	abstract = {We introduce "TriMap"; a dimensionality reduction technique based on triplet constraints, which preserves the global structure of the data better than the other commonly used methods such as t-SNE, LargeVis, and UMAP. To quantify the global accuracy of the embedding, we introduce a score that roughly reflects the relative placement of the clusters rather than the individual points. We empirically show the excellent performance of TriMap on a large variety of datasets in terms of the quality of the embedding as well as the runtime. On our performance benchmarks, TriMap easily scales to millions of points without depleting the memory and clearly outperforms t-SNE, LargeVis, and UMAP in terms of runtime.},
+	urldate = {2024-09-06},
+	author = {Amid, Ehsan and Warmuth, Manfred K.},
+	year = {2019},
+	keywords = {Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences},
+}
+
+@article{huang_towards_2022,
+	title = {Towards a comprehensive evaluation of dimension reduction methods for transcriptomic data visualization},
+	volume = {5},
+	copyright = {2022 The Author(s)},
+	issn = {2399-3642},
+	url = {https://www.nature.com/articles/s42003-022-03628-x},
+	doi = {10.1038/s42003-022-03628-x},
+	abstract = {Dimension reduction (DR) algorithms project data from high dimensions to lower dimensions to enable visualization of interesting high-dimensional structure. DR algorithms are widely used for analysis of single-cell transcriptomic data. Despite widespread use of DR algorithms such as t-SNE and UMAP, these algorithms have characteristics that lead to lack of trust: they do not preserve important aspects of high-dimensional structure and are sensitive to arbitrary user choices. Given the importance of gaining insights from DR, DR methods should be evaluated carefully before trusting their results. In this paper, we introduce and perform a systematic evaluation of popular DR methods, including t-SNE, art-SNE, UMAP, PaCMAP, TriMap and ForceAtlas2. Our evaluation considers five components: preservation of local structure, preservation of global structure, sensitivity to parameter choices, sensitivity to preprocessing choices, and computational efficiency. This evaluation can help us to choose DR tools that align with the scientific goals of the user.},
+	language = {en},
+	number = {1},
+	urldate = {2024-09-06},
+	journal = {Communications Biology},
+	author = {Huang, Haiyang and Wang, Yingfan and Rudin, Cynthia and Browne, Edward P.},
+	month = jul,
+	year = {2022},
+	keywords = {Data mining, Data processing, Machine learning},
+	pages = {1--11},
+}
+
+@article{wang_understanding_2021,
+	title = {Understanding {How} {Dimension} {Reduction} {Tools} {Work}: {An} {Empirical} {Approach} to {Deciphering} t-{SNE}, {UMAP}, {TriMap}, and {PaCMAP} for {Data} {Visualization}},
+	volume = {22},
+	issn = {1533-7928},
+	shorttitle = {Understanding {How} {Dimension} {Reduction} {Tools} {Work}},
+	url = {http://jmlr.org/papers/v22/20-1061.html},
+	abstract = {Dimension reduction (DR) techniques such as t-SNE, UMAP, and TriMap have demonstrated impressive visualization performance on many real-world datasets. One tension that has always faced these methods is the trade-off between preservation of global structure and preservation of local structure: these methods can either handle one or the other, but not both. In this work, our main goal is to understand what aspects of DR methods are important for preserving both local and global structure: it is difficult to design a better method without a true understanding of the choices we make in our algorithms and their empirical impact on the low-dimensional embeddings they produce. Towards the goal of local structure preservation, we provide several useful design principles for DR loss functions based on our new understanding of the mechanisms behind successful DR methods. Towards the goal of global structure preservation, our analysis illuminates that the choice of which components to preserve is important. We leverage these insights to design a new algorithm for DR, called Pairwise Controlled Manifold Approximation Projection (PaCMAP), which preserves both local and global structure. Our work provides several unexpected insights into what design choices both to make and avoid when constructing DR algorithms.},
+	number = {201},
+	urldate = {2024-09-06},
+	journal = {Journal of Machine Learning Research},
+	author = {Wang, Yingfan and Huang, Haiyang and Rudin, Cynthia and Shaposhnik, Yaron},
+	year = {2021},
+	pages = {1--73},
+}
+
+@article{setty_characterization_2019,
+	title = {Characterization of cell fate probabilities in single-cell data with {Palantir}},
+	volume = {37},
+	issn = {1087-0156},
+	url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7549125/},
+	doi = {10.1038/s41587-019-0068-4},
+	abstract = {Single-cell RNA sequencing (scRNA-seq) studies of differentiating systems have raised fundamental questions regarding the discrete versus continuous nature of both differentiation and cell fate. Here we present Palantir, an algorithm that models trajectories of differentiating cells—treating cell fate as a probabilistic process—and leverages entropy to measure cell plasticity along the trajectory. Palantir generates a high-resolution pseudotime ordering of cells and, for each cell state, assigns a probability of differentiating into each terminal state. We apply our algorithm to human bone marrow scRNA-seq data and detect important landmarks of hematopoietic differentiation. Palantir’s resolution enables the identification of key transcription factors that drive lineage fate choice and closely track when cells lose plasticity. We show that Palantir outperforms existing algorithms in identifying cell lineages and recapitulating gene expression trends during differentiation generalizable to diverse tissue types and well-suited to resolve less-studied differentiating systems.},
+	number = {4},
+	urldate = {2024-09-06},
+	journal = {Nature biotechnology},
+	author = {Setty, Manu and Kiseliovas, Vaidotas and Levine, Jacob and Gayoso, Adam and Mazutis, Linas and Pe’er, Dana},
+	month = apr,
+	year = {2019},
+	pmid = {30899105},
+	pmcid = {PMC7549125},
+	pages = {451--460},
+}
+
+@article{van_dijk_recovering_2018,
+	title = {Recovering {Gene} {Interactions} from {Single}-{Cell} {Data} {Using} {Data} {Diffusion}},
+	volume = {174},
+	issn = {0092-8674},
+	url = {https://www.sciencedirect.com/science/article/pii/S0092867418307244},
+	doi = {10.1016/j.cell.2018.05.061},
+	abstract = {Single-cell RNA sequencing technologies suffer from many sources of technical noise, including under-sampling of mRNA molecules, often termed “dropout,” which can severely obscure important gene-gene relationships. To address this, we developed MAGIC (Markov affinity-based graph imputation of cells), a method that shares information across similar cells, via data diffusion, to denoise the cell count matrix and fill in missing transcripts. We validate MAGIC on several biological systems and find it effective at recovering gene-gene relationships and additional structures. Applied to the epithilial to mesenchymal transition, MAGIC reveals a phenotypic continuum, with the majority of cells residing in intermediate states that display stem-like signatures, and infers known and previously uncharacterized regulatory interactions, demonstrating that our approach can successfully uncover regulatory relations without perturbations.},
+	number = {3},
+	urldate = {2024-09-06},
+	journal = {Cell},
+	author = {van Dijk, David and Sharma, Roshan and Nainys, Juozas and Yim, Kristina and Kathail, Pooja and Carr, Ambrose J. and Burdziak, Cassandra and Moon, Kevin R. and Chaffer, Christine L. and Pattabiraman, Diwakar and Bierie, Brian and Mazutis, Linas and Wolf, Guy and Krishnaswamy, Smita and Pe’er, Dana},
+	month = jul,
+	year = {2018},
+	keywords = {manifold learning, imputation, single-cell RNA sequencing, EMT, regulatory networks},
+	pages = {716--729.e27},
+}

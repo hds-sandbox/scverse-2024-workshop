@@ -19,22 +19,7 @@ The setup file for your webpage is called `_quarto.yml`. This example provided h
 In our configuration, you will find the type of `project`, and the `website` descriptors. Within the `website`, there is a title and the configuration for the navigation bar (`navbar`), which defines the items for the left and right sides:
 
 ```yml
-    left:
-      - href: index.qmd
-        text: Introduction
-      - href: people.qmd
-        text: People
-      - href: rmd/rmarkdown_example.Rmd
-        text: Rmarkdown      
-      - href: jupyter_example.ipynb
-        text: Jupyter example
-    right: 
-      - icon: github
-        href: https://github.com/hds-sandbox
-        aria-label: GitHub
-      - icon: linkedin
-        href: https://www.linkedin.com/company/ucph-heads/
-        aria-label: LinkedIn
+ddddd
 ```
 On the left side, we specify the menu titles and links to other documents used for the subpages. On the right side, there are a couple of icons with social media links. It is straightforward to add new pages to the menu on the left to change the structure of the website.
 
