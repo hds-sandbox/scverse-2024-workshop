@@ -6,22 +6,22 @@
             {
                 "answer": "How much the neighborhood of each point stretches to include other points",
                 "correct": true,
-                "feedback": "Correct!"
+                "feedback": "Correct! A small perplexity will consider only small neighbourhoods, giving privilege to the local data structure and not the global one. This is why a perplexity of 1 gives rise to a blob of points."
             },
             {
-                "answer": "The number of dimensions to include in the projection",
-                "correct": true,
+                "answer": "The number of dimensions to include in the projection from the high-dimensional data",
+                "correct": false,
                 "feedback": "Nope :("
             },
             {
                 "answer": "The speed to determine the embedding",
-                "correct": true,
+                "correct": false,
                 "feedback": "Nein :("
             },
             {
-                "answer": " The balance between local and global structure when calculating similarities between points.",
+                "answer": "The balance between local and global structure when calculating similarities between points.",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Yes! A higher perplexity will consider similarities also for points more far away, keeping more of the global structure of the data in the projection."
             },
             {
                 "answer": "Live snakes via Python",
