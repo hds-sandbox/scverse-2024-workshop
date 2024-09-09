@@ -1,0 +1,124 @@
+---
+title: "Publishing"
+format: html
+date-modified: last-modified
+date-format: long
+date: 2024-09-11
+bibliography: resources/references.bib
+#https://emojidb.org/quarto-emojis for emojis copypaste
+---
+
+A small guide on how to publish your own documentation using Github + Quarto + Jupyter notebooks.
+
+:::{.callout-warning title="Prerequisites"}
+You do not need much to try publishing your own jupyter notebooks:
+
+- A Github account (the free tier is completely fine)
+- Quarto installed on your computer (optional, if you want to preview your website)
+- Whatever IDE/editor you prefer to use for coding
+:::
+
+
+
+# Github template
+
+We have created a template on Github which can be used to recreate the same exact documentation you are reading now, which consists of few webpages with text and some others with code, created from the jupyter notebooks tutorials. 
+
+The template is structured in three branches:
+
+- **main** where you can copy code, scripts, data, notebooks of your research project
+- **webpage-quarto** where you have the webpage written in markdown or jupyter notebooks
+- **gh-pages** where the webpage is automatically loaded every time you modify it in the **webpage-quarto** branch.
+
+Once you copy the template to create a repository in your own account, you will be able to see the same webpage you are visiting, which you can modify with your own menus, pages and notebooks!
+
+## A guide for using the template
+
+You can get and use the template as it follows
+
+- Click on the button below to go to the template page.
+
+BUTTON
+
+- Choose `Use this template`, then `Create a new repository`
+
+![](img/template01.png){width=800 fig-align="center"}
+
+- Select `Include all branches`. This will all the *branches* mentioned before.
+Then provide a name and description of your repository, and choose if the repository has to be `Public` or `Private`. 
+
+:::{.callout-warning}
+Remember that a `Private` repository cannot show the webpage **if you have the free tier** Github account.
+:::
+
+![](img/template02.png){width=800 fig-align="center"}
+
+- Now the repository is created in your account. The same webpages you are visiting now will be visible to you at an address of the type `https://username.github.io/repository-name-you-chose`. You will be able to see all the branches available using the drop-down menu.
+
+![CHANGE THIS WITHOUT docker](img/template03.png){width=800 fig-align="center"}
+
+- If you choose the branche `webpage-quarto`, you will notice a small message saying `initialize webpage-quarto`. This is a so-called **Github action**. Everytime you modify something in the branch `webpage-quarto`, the webpage will be rendered again, copied in the branch `gh-pages`, and becomes visible at the web address!
+
+![](img/template04.png){width=800 fig-align="center"}
+
+- On the right side of the repository, you can change the information of your repository by clicking on the small symbol located on the top-right corner. You can include the web address, which you can find clicking on `Github pages`. In this way your webpage address will appear as part of the description
+
+![](img/template05.png){width=600 fig-align="center"}
+
+### Downloading the branches
+
+The branches can be downloaded and synchronized using the command line or the software github desktop. Alternatively, each branch can be downloaded as a compressed file.
+
+## Modifying the material
+
+### Main branch
+
+The material for your research project should be saved in the `main` branch. Here you can keep your code, (small) datasets, notebooks, scripts and so on. For large datasets it is better to use other services like Zenodo, which allows up to 50GB per file, and is free.
+
+### Webpage-quarto branch
+
+Here you find all the files composing the website. 
+
+#### Webpages in quarto format
+
+There are two webpages in markdown format - `index.qmd` and `publish.qmd` - corresponding to the welcome page and to this webpage. Open them and you will see how the text is simple markdown. The only exception is the meta-data at the beginning of each page, with a few descriptive items which are quite self-explicative. 
+
+LINK TO QUARTO ORG
+
+#### Notebooks
+
+In the folder `notebooks` you can see the tutorials. Those will be converted into web format for the webpage, and again need some metadata at the beginning both for descriptive purposes, but also to choose various options. 
+
+LINK TO QUARTO ORG
+
+:::{.callout-warning}
+By default, the notebook does not run when the webpage is created, and is instead kept with the shown results.
+:::
+
+#### YML setup
+
+The file `_quarto.yml` contains all the webpage structure. The section
+
+```
+website:
+  title: "Course Template"
+  navbar:
+    logo: /img/logo.png
+    left:
+      - href: index.qmd
+        text: Welcome
+      - href: notebooks/interactivePlotsTransc.ipynb
+        text: Tutorial 1
+      - href: publish.qmd
+        text: Publish
+    right: 
+      - icon: github
+        href: https://github.com/hds-sandbox/scverse-2024-workshop
+        aria-label: GitHub
+```
+
+is used to define
+
+- the title and logo of the webpage (the `logo.png` file in the `img` folder)
+- the menus on the left side of the navigation bar. Here you can see the welcome page, the publishing guide and the notebooks.
+- the link to the github repository, which you need to update according to your new repository

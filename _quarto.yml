@@ -7,7 +7,11 @@ website:
     logo: /img/logo.png
     left:
       - href: index.qmd
-        text: Introduction
+        text: Welcome
+      - href: notebooks/interactivePlotsTransc.ipynb
+        text: Tutorial 1
+      - href: publish.qmd
+        text: Publish
     right: 
       - icon: github
         href: https://github.com/hds-sandbox/scverse-2024-workshop

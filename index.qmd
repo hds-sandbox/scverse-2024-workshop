@@ -1,77 +1,23 @@
 ---
-title: "Introduction"
+title: "Welcome"
 format: html
 date-modified: last-modified
 date-format: long
-date: 2024-01-01
+date: 2024-09-11
 bibliography: resources/references.bib
 #https://emojidb.org/quarto-emojis for emojis copypaste
 ---
 
-**Here** is *where* you will write an abstract about the course. This is an example of the use of citations [@creative_commons_2022] and [@Garcia2020].
+**Welcome to the scVerse 2024 conference workshop on Data visualization and interactive documentation.**
 
-:::{.callout-note title="Course Overview"}
-    
-- 📖 **Syllabus:** 
+The content of this workshop can be found in the menu above:
 
-  1. First item  
-  2. Second item  
-
-- **Total Time Estimation:** X hours  
-[comment]: # (No Property in Bioschema)
-
-- :file_folder: **Supporting Materials:**  
-[comment]: # (Property in Bioschema: mentions)
-
-- :man_technologist: **Target Audience:** PhD, MsC, etc.
-[comment]: # (Property in Bioschema: audience)
-
-- :woman_student: **Level:** Beginner/Intermediate/Advanced
-[comment]: # (Property in Bioschema: educationalLevel)
-
-- :lock: **License:** [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
-[comment]: # (Property in Biochema: licence)
-
-- :coin: **Funding:** This project was funded by the Novo Nordisk Fonden (NNF20OC0063268).
-[comment]: # (Funding by NNF and others)
+:::{.callout-note icon="false" appearance="simple"}
+- slides and references
+- rendered notebooks
+  - a notebook with various projections and diagnostics
+  - a notebook with spatial data and interactive visualizations
+- a small guide to publish your own notebooks on github as a webpage
 :::
 
-::: {.callout-warning title="Course Requirements"}
-    - First requirement
-    - Second requirement
-:::
-
-Write the longer introduction to the course here. 
-
-Feature tips, more [here](https://quarto.org/docs/authoring/callouts.html#markdown-syntax): 
-
-::: {.callout-tip title="Course Goals"}
-    By the end of this workshop, you should be able to:
-
-    - Goal 1
-    - Goal 2
-:::
-
-::: {.callout-caution collapse="true"}
-## Expand To Learn About Collapse
-
-This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
-:::
-
-
-
-### Acknowledgements
-
-- First acknowledgement
-
-### Print a table
-
-```{r}
-#| echo: false
-library(gt)
-# Load the data from CSV
-data <- read.csv("resources/samplesheet.csv")
-
-# Print the data as a table
-data %>% gt()
-```
+The rendered notebooks are for visualization on the browser, so that they are of future reference. To run the notebooks, please download them and upload them on google colab:
