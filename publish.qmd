@@ -4,8 +4,6 @@ format: html
 date-modified: last-modified
 date-format: long
 date: 2024-09-11
-bibliography: resources/references.bib
-#https://emojidb.org/quarto-emojis for emojis copypaste
 ---
 
 A small guide on how to publish your own documentation using Github + Quarto + Jupyter notebooks.
@@ -18,11 +16,9 @@ You do not need much to try publishing your own jupyter notebooks:
 - Whatever IDE/editor you prefer to use for coding
 :::
 
-
-
 # Github template
 
-We have created a template on Github which can be used to recreate the same exact documentation you are reading now, which consists of few webpages with text and some others with code, created from the jupyter notebooks tutorials. 
+We have created a **template on Github** which can be used to recreate the same exact documentation you are reading now, which consists of few webpages with text and some others with code, created from the jupyter notebooks tutorials. 
 
 The template is structured in three branches:
 
@@ -44,7 +40,7 @@ BUTTON
 
 ![](img/template01.png){width=800 fig-align="center"}
 
-- Select `Include all branches`. This will all the *branches* mentioned before.
+- Select `Include all branches`. This will copy all the *branches* mentioned before.
 Then provide a name and description of your repository, and choose if the repository has to be `Public` or `Private`. 
 
 :::{.callout-warning}
@@ -55,19 +51,30 @@ Remember that a `Private` repository cannot show the webpage **if you have the f
 
 - Now the repository is created in your account. The same webpages you are visiting now will be visible to you at an address of the type `https://username.github.io/repository-name-you-chose`. You will be able to see all the branches available using the drop-down menu.
 
-![CHANGE THIS WITHOUT docker](img/template03.png){width=800 fig-align="center"}
+![](img/template03.png){width=800 fig-align="center"}
 
-- If you choose the branche `webpage-quarto`, you will notice a small message saying `initialize webpage-quarto`. This is a so-called **Github action**. Everytime you modify something in the branch `webpage-quarto`, the webpage will be rendered again, copied in the branch `gh-pages`, and becomes visible at the web address!
+- If you open the branch `webpage-quarto`, you should see a small message saying `initialize webpage-quarto`. This is a so-called **Github action**. Everytime you modify something in the branch `webpage-quarto`, the webpage will be rendered again, copied in the branch `gh-pages`, and becomes visible at the web address!
 
 ![](img/template04.png){width=800 fig-align="center"}
 
-- On the right side of the repository, you can change the information of your repository by clicking on the small symbol located on the top-right corner. You can include the web address, which you can find clicking on `Github pages`. In this way your webpage address will appear as part of the description
+- On the right side of the repository, you can change the description by clicking on the small symbol located on the top-right corner. You can include the web address, which you can find clicking on `Github pages`. In this way your webpage address will appear as part of the description
 
 ![](img/template05.png){width=600 fig-align="center"}
 
 ### Downloading the branches
 
-The branches can be downloaded and synchronized using the command line or the software github desktop. Alternatively, each branch can be downloaded as a compressed file.
+The branches can be downloaded and synchronized using the command line or the software github desktop. To download the two branches from the command line, click first on the green button `Code`, and copy the repository address. 
+
+![](img/template06.png){width=800 fig-align="center"}
+
+Then use the command line to write
+
+```
+git clone -b main ADDRESS-YOU-COPIED your_main
+git clone -b webpage ADDRESS-YOU-COPIED your_webpage
+```
+
+This will create two folders called `your_main` and `your_webpage` which you can keep synchronized with github. Pushing changes in the folder `your_webpage` will update the branch `webpage-quarto`.
 
 ## Modifying the material
 
@@ -77,11 +84,15 @@ The material for your research project should be saved in the `main` branch. Her
 
 ### Webpage-quarto branch
 
-Here you find all the files composing the website. 
+Here you find the description of the main files composing the website. Once you understand how notebooks and markdown files are used to structure the webpage, you can use your own notebooks and create your own markdown pages, **update the changes on github, and get your documentation website!**
+
+:::{.callout-note}
+Remember that the webpage will be created automatically every time you push changes to github for the branch `webpage-quarto`. This is done possible because we have created a workflow in the repository, which can be seen in `.github/workflows/publish.yml`. In this way you can avoid to create the rendered webpage by hand with quarto every time you do a change.
+:::
 
 #### Webpages in quarto format
 
-There are two webpages in markdown format - `index.qmd` and `publish.qmd` - corresponding to the welcome page and to this webpage. Open them and you will see how the text is simple markdown. The only exception is the meta-data at the beginning of each page, with a few descriptive items which are quite self-explicative. 
+There are two webpages in **markdown** format - `index.qmd` and `publish.qmd` - corresponding to the welcome page and to this webpage. Open them and you will see how the text is simple markdown. The only exception is the meta-data at the beginning of each page, with a few descriptive items which are quite self-explicative. 
 
 LINK TO QUARTO ORG
 
@@ -89,7 +100,7 @@ LINK TO QUARTO ORG
 
 In the folder `notebooks` you can see the tutorials. Those will be converted into web format for the webpage, and again need some metadata at the beginning both for descriptive purposes, but also to choose various options. 
 
-LINK TO QUARTO ORG
+To see the basic example on notebook on the Quarto documentation, [click here](https://quarto.org/docs/get-started/hello/jupyter.html). Another example for inspiration [can be found here](https://quarto.org/docs/get-started/computations/jupyter.html).
 
 :::{.callout-warning}
 By default, the notebook does not run when the webpage is created, and is instead kept with the shown results.
@@ -120,5 +131,17 @@ website:
 is used to define
 
 - the title and logo of the webpage (the `logo.png` file in the `img` folder)
-- the menus on the left side of the navigation bar. Here you can see the welcome page, the publishing guide and the notebooks.
-- the link to the github repository, which you need to update according to your new repository
+- the menus on the left side of the navigation bar (`left:`). Here you can see the welcome page, the publishing guide and the notebooks with the menu title.
+- the link to the github repository on the right side of the navigation bar (`right:`), which you need to update according to your new repository
+
+The last part of the file defines themes for the light and dark mode, which you can personalize if you want. We personalized the light theme with a `scss` file. For more information about available themes, [look here](https://quarto.org/docs/output-formats/html-themes.html)
+
+You can easily add or modify content in the menu toolbar starting from this file as an example.
+
+More info about the YML file to define the website navigation can be found [in this documentation](https://quarto.org/docs/websites/website-navigation.html#top-navigation)
+
+:::{.callout-note title="Ready to go?"}
+Ok, now you should have gotten the very basics to get your website up and running, starting from the example in the template.
+
+
+:::
