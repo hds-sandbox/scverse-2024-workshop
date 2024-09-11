@@ -1,0 +1,28 @@
+[
+    {
+        "question": "Use the input box below to explore various eigenvectors and plot them on the data and on a violin plot. Then choose only the right answers of this quiz.",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Component five is not sensible to any cell type",
+                "correct": false,
+                "feedback": "Are you sure? What about one of the smallest clusters?"
+            },
+            {
+                "answer": "Eigenvector 2 is quite specific to Endothelial cells and some smooth muscle cells",
+                "correct": true,
+                "feedback": "Exact! You can see those highlighted on the projection and in the violin plot"
+            },
+            {
+                "answer": "A small subset of spermatogonia A is worth looking at after exploring eigenvector 20",
+                "correct": true,
+                "feedback": "Exact. Maybe that is a subset of cells having specific gene expressions? One can explore them more with downstream analysis."
+            },
+            {
+                "answer": "Eigenvector 8 shows that some genes might have over- and under-expression in elongating and round spermatids, respectively",
+                "correct": true,
+                "feedback": "Yes, this is likely what happens because those two cell types have opposite sign in the eigenvector 8, which could represent opposite behaviour of some gene modules. Again this could be explored in downstream analysis."
+            }
+        ]
+    }
+]

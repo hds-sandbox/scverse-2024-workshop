@@ -4,7 +4,7 @@
         "type": "many_choice",
         "answers": [
             {
-                "answer": "Noise in the data with characterized by few expression values causing small variance",
+                "answer": "Noise in the data characterized by few expression values causing small variance",
                 "correct": true,
                 "feedback": "Correct! If the expression has only few values>0 there will be very little variance on those dimensions of the data, and the ratio compared to the previous dimension's variance will be small."
             },
