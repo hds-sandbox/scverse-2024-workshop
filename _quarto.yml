@@ -8,10 +8,10 @@ website:
     left:
       - href: index.qmd
         text: Welcome
-      - href: notebooks/interactivePlotsTransc.ipynb
-        text: Tutorial 1
       - href: publish.qmd
         text: Publish
+      - href: notebooks/interactivePlotsTransc.ipynb
+        text: Tutorial
     right: 
       - icon: github
         href: https://github.com/hds-sandbox/scverse-2024-workshop
@@ -24,4 +24,3 @@ format:
       light: [materia, css/materialight.scss]
       dark: darkly
     toc: true
-    code-fold: true
