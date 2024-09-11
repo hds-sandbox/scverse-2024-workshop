@@ -1,47 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hds-sandbox.github.io/scverse-2024-workshop/index.html</loc>
-    <lastmod>2024-08-27T12:57:15.220Z</lastmod>
+    <loc>https://hds-sandbox.github.io/scverse-2024-workshop/publish.html</loc>
+    <lastmod>2024-09-11T04:40:41.411Z</lastmod>
   </url>
   <url>
-    <loc>https://hds-sandbox.github.io/scverse-2024-workshop/cards/SamueleSoraggi.html</loc>
-    <lastmod>2024-08-27T12:57:15.208Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-sandbox.github.io/scverse-2024-workshop/cards/AlbaMartinez.html</loc>
-    <lastmod>2024-08-27T12:57:15.208Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-sandbox.github.io/scverse-2024-workshop/people.html</loc>
-    <lastmod>2024-08-27T12:57:15.220Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-sandbox.github.io/scverse-2024-workshop/jupyter_example.html</loc>
-    <lastmod>2024-08-27T12:57:15.220Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-sandbox.github.io/scverse-2024-workshop/rmd/rmarkdown_example.html</loc>
-    <lastmod>2024-08-27T12:57:15.220Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-sandbox.github.io/scverse-2024-workshop/rmd/knit/rmarkdown_example.html</loc>
-    <lastmod>2024-08-27T12:57:15.220Z</lastmod>
+    <loc>https://hds-sandbox.github.io/scverse-2024-workshop/notebooks/interactivePlotsTransc.html</loc>
+    <lastmod>2024-09-11T04:40:41.411Z</lastmod>
   </url>
   <url>
     <loc>https://hds-sandbox.github.io/scverse-2024-workshop/LICENSE.html</loc>
-    <lastmod>2024-08-27T12:57:15.208Z</lastmod>
+    <lastmod>2024-09-11T04:40:41.391Z</lastmod>
   </url>
   <url>
-    <loc>https://hds-sandbox.github.io/scverse-2024-workshop/cards/JakobSkelmose.html</loc>
-    <lastmod>2024-08-27T12:57:15.208Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-sandbox.github.io/scverse-2024-workshop/cards/JacobHansen.html</loc>
-    <lastmod>2024-08-27T12:57:15.208Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-sandbox.github.io/scverse-2024-workshop/cards/JenniferBartell.html</loc>
-    <lastmod>2024-08-27T12:57:15.208Z</lastmod>
+    <loc>https://hds-sandbox.github.io/scverse-2024-workshop/index.html</loc>
+    <lastmod>2024-09-11T04:40:41.395Z</lastmod>
   </url>
 </urlset>
