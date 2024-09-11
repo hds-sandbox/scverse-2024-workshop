@@ -74,6 +74,6 @@
     "href": "index.html",
     "title": "Welcome",
     "section": "",
-    "text": "Welcome to the scVerse 2024 conference workshop on Data visualization and interactive documentation.\nThe content of this workshop can be found in the menu above:\n\n\n\n\n\n\n\nslides and references\nrendered notebooks\n\na notebook with various projections and diagnostics\na notebook with spatial data and interactive visualizations\n\na small guide to publish your own notebooks on github as a webpage\n\n\n\n\nThe rendered notebooks are for visualization on the browser, so that they are of future reference. To run the notebooks, please download them and upload them on google colab:"
+    "text": "Welcome to the scVerse 2024 conference workshop on Data visualization and interactive documentation.\nSlides\n\nThe content of this workshop can be found in the menu above:\n\n\n\n\n\n\n\nHome page\nrendered tutorial\na small guide to publish your own notebooks on github as a webpage\n\n\n\n\nThe rendered notebook is for visualization on the browser, for future reference. To run the notebooks, please download from the button below and upload it on google colab:"
   }
 ]
