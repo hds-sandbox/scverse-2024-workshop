@@ -124,8 +124,16 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#webpage-menu" id="toc-webpage-menu" class="nav-link active" data-scroll-target="#webpage-menu">Webpage menu</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#notebook" id="toc-notebook" class="nav-link" data-scroll-target="#notebook">Notebook</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -162,26 +170,54 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><strong>Welcome to the scVerse 2024 conference workshop on Data visualization and interactive documentation.</strong></p>
-<p>Slides</p>
-<p><embed src="https://raw.githubusercontent.com/hds-sandbox/scverse-2024-workshop/main/Slides/slides.pdf" class="img-fluid"></p>
-<p>The content of this workshop can be found in the menu above:</p>
-<div class="callout callout-style-simple callout-note no-icon">
-<div class="callout-body d-flex">
+<div class="callout callout-style-default callout-note callout-titled" title="Abstract">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
+<div class="callout-title-container flex-fill">
+Abstract
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Here you will go through some different ways of projecting single cell data. You start with PCA-based projections, then move to geometry-based projections and diagnostic ways of choosing the method which matches best your data. At the end, you will</p>
 <ul>
-<li>Home page</li>
-<li>rendered tutorial</li>
-<li>a small guide to publish your own notebooks on github as a webpage</li>
+<li>understand briefly the difference between modeling distances and geometry</li>
+<li>know how to apply the methods with scanpy</li>
+<li>be able to compare the methods and their distortions to choose the one fitting best your data</li>
+<li>create interactive plots for your webpage documentation</li>
 </ul>
 </div>
 </div>
-</div>
-<p>The rendered notebook is for visualization on the browser, for future reference. To run the notebooks, please download from the button below and upload it on google colab:</p>
+<section id="webpage-menu" class="level3">
+<h3 class="anchored" data-anchor-id="webpage-menu">Webpage menu</h3>
+<p>On the header of this page you can also see the publishing guide for github pages (using the template for this webpage), and you can look at the tutorial rendered in web format.</p>
+</section>
+<section id="slides" class="level3">
+<h3 class="anchored" data-anchor-id="slides">Slides</h3>
+<p>You can download the slides of the workshop from the link below</p>
+<p>&nbsp;</p>
+<p align="center">
+<a href="https://raw.githubusercontent.com/hds-sandbox/scverse-2024-workshop/main/Slides/slides.pdf" style="background-color: #4266A1; color: #FFFFFF; padding: 30px 20px; text-decoration: none; border-radius: 5px;"> Slides of the workshop </a>
+</p>
+<p>&nbsp;</p>
+</section>
+<section id="notebook" class="level3">
+<h3 class="anchored" data-anchor-id="notebook">Notebook</h3>
+<p>The rendered notebook accessible from the top menu is for future reference and already compiled. To run the notebooks, please download from the button below and upload it on google colab:</p>
+<p>&nbsp;</p>
+<p align="center">
+<a href="https://raw.githubusercontent.com/hds-sandbox/scverse-2024-workshop/main/Notebooks/interactivePlotsTranscColab.ipynb" style="background-color: #4266A1; color: #FFFFFF; padding: 30px 20px; text-decoration: none; border-radius: 5px;"> Google colab version </a>
+</p>
+<p>&nbsp;</p>
+<p>If you want to use your own computer’s jupyterlab, use instead the notebook below</p>
+<p>&nbsp;</p>
+<p align="center">
+<a href="https://raw.githubusercontent.com/hds-sandbox/scverse-2024-workshop/main/Notebooks/interactivePlotsTranscJupyter.ipynb" style="background-color: #4266A1; color: #FFFFFF; padding: 30px 20px; text-decoration: none; border-radius: 5px;"> Jupyterlab version </a>
+</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
