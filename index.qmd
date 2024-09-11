@@ -10,17 +10,53 @@ bibliography: resources/references.bib
 
 **Welcome to the scVerse 2024 conference workshop on Data visualization and interactive documentation.**
 
-Slides
+:::{.callout-note title="Abstract"}
+Here you will go through some different ways of projecting single cell data. You start with PCA-based projections, then move to geometry-based projections and diagnostic ways of choosing the method which matches best your data. At the end, you will
 
-![](https://raw.githubusercontent.com/hds-sandbox/scverse-2024-workshop/main/Slides/slides.pdf)
-
-The content of this workshop can be found in the menu above:
-
-:::{.callout-note icon="false" appearance="simple"}
-- Home page
-- rendered tutorial
-- a small guide to publish your own notebooks on github as a webpage
+- understand briefly the difference between modeling distances and geometry
+- know how to apply the methods with scanpy
+- be able to compare the methods and their distortions to choose the one fitting best your data
+- create interactive plots for your webpage documentation
 :::
 
-The rendered notebook is for visualization on the browser, for future reference. To run the notebooks, please download from the button below and upload it on google colab:
+### Webpage menu
 
+On the header of this page you can also see the publishing guide for github pages (using the template for this webpage), and you can look at the tutorial rendered in web format.
+
+### Slides
+
+You can download the slides of the workshop from the link below
+
+&nbsp;
+
+ <p align="center">
+  <a href="https://raw.githubusercontent.com/hds-sandbox/scverse-2024-workshop/main/Slides/slides.pdf" style="background-color: #4266A1; color: #FFFFFF; padding: 30px 20px; text-decoration: none; border-radius: 5px;">
+    Slides of the workshop
+  </a>
+</p>
+
+&nbsp;
+
+### Notebook
+
+The rendered notebook accessible from the top menu is for future reference and already compiled. To run the notebooks, please download from the button below and upload it on google colab:
+
+&nbsp;
+
+ <p align="center">
+  <a href="https://raw.githubusercontent.com/hds-sandbox/scverse-2024-workshop/main/Notebooks/interactivePlotsTranscColab.ipynb" style="background-color: #4266A1; color: #FFFFFF; padding: 30px 20px; text-decoration: none; border-radius: 5px;">
+    Google colab version
+  </a>
+</p>
+
+&nbsp;
+
+If you want to use your own computer's jupyterlab, use instead the notebook below
+
+&nbsp;
+
+ <p align="center">
+  <a href="https://raw.githubusercontent.com/hds-sandbox/scverse-2024-workshop/main/Notebooks/interactivePlotsTranscJupyter.ipynb" style="background-color: #4266A1; color: #FFFFFF; padding: 30px 20px; text-decoration: none; border-radius: 5px;">
+    Jupyterlab version
+  </a>
+</p>
