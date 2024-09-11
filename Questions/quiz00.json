@@ -1,0 +1,28 @@
+[
+    {
+        "question": "In the plot above, what do components with very low variance ratio probably represent?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Noise in the data with characterized by few expression values causing small variance",
+                "correct": true,
+                "feedback": "Correct! If the expression has only few values>0 there will be very little variance on those dimensions of the data, and the ratio compared to the previous dimension's variance will be small."
+            },
+            {
+                "answer": "Principal components describing count distribution in the data",
+                "correct": false,
+                "feedback": "Nope :( Principal Components do not really have anything to do with that"
+            },
+            {
+                "answer": "Projection of those dimensions where background genes have very constant expression across all cells",
+                "correct": true,
+                "feedback": "Exact. When a gene has constant expression, the variance is very low and such gene does not contribute to the PCA."
+            },
+            {
+                "answer": "The projection of rare cluster of cells present in the single cell data",
+                "correct": false,
+                "feedback": "No, those should eventually be part of the first PCA components"
+            }
+        ]
+    }
+]
