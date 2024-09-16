@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2024-09-11">
 
-<title>Publishing – Course Template</title>
+<title>Publishing – Projections and interactive plots for Single Cell data analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="./img/logo.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Course Template</span>
+    <span class="navbar-title">Projections and interactive plots for Single Cell data analysis</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -167,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">September 11, 2024</p>
+      <p class="date-modified">September 16, 2024</p>
     </div>
   </div>
     
@@ -310,7 +310,11 @@ Note
 <section id="webpages-in-quarto-format" class="level4">
 <h4 class="anchored" data-anchor-id="webpages-in-quarto-format">Webpages in quarto format</h4>
 <p>There are two webpages in <strong>markdown</strong> format - <code>index.qmd</code> and <code>publish.qmd</code> - corresponding to the welcome page and to this webpage. Open them and you will see how the text is simple markdown. The only exception is the meta-data at the beginning of each page, with a few descriptive items which are quite self-explicative.</p>
-<p>LINK TO QUARTO ORG</p>
+<p>&nbsp;</p>
+<p align="center">
+<a href="https://quarto.org/docs/output-formats/html-basics.html" style="background-color: #4266A1; color: #FFFFFF; padding: 30px 20px; text-decoration: none; border-radius: 5px;"> Guide with the HTML basics for the options you can use in the metadata </a>
+</p>
+<p>&nbsp;</p>
 </section>
 <section id="notebooks" class="level4">
 <h4 class="anchored" data-anchor-id="notebooks">Notebooks</h4>
@@ -329,6 +333,11 @@ Warning
 <p>By default, the notebook does not run when the webpage is created, and is instead kept with the shown results.</p>
 </div>
 </div>
+<p>&nbsp;</p>
+<p align="center">
+<a href="https://quarto.org/docs/tools/jupyter-lab.html" style="background-color: #4266A1; color: #FFFFFF; padding: 30px 20px; text-decoration: none; border-radius: 5px;"> Guide with the jupyter notebooks basics </a>
+</p>
+<p>&nbsp;</p>
 </section>
 <section id="yml-setup" class="level4">
 <h4 class="anchored" data-anchor-id="yml-setup">YML setup</h4>
@@ -369,6 +378,23 @@ Ready to go?
 <div class="callout-body-container callout-body">
 <p>Ok, now you should have gotten the very basics to get your website up and running, starting from the example in the template.</p>
 <p>Note how in the tutorial page, the interactive plots can be actively used in the documentation!</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Rendering interactive plots">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Rendering interactive plots
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The interactive plots you can see in the tutorial rendered as a webpage will not work if you do the plots on a notebook executed with google colab.</p>
+<p>This is because Colab has specific settings to do interactive plots, and those cannot work with Quarto.</p>
+<p>Thus remember to run your notebooks on jupyterlab - your plots will work also on your webpage!</p>
+<p>Also, to make your metadata and callout boxes seen while you develop a notebook, install the plugin for jupyterlab with</p>
+<pre><code>pip install jupyterlab-quarto</code></pre>
 </div>
 </div>
 
