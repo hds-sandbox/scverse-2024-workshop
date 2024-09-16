@@ -102,7 +102,15 @@ Remember that the webpage will be created automatically every time you push chan
 
 There are two webpages in **markdown** format - `index.qmd` and `publish.qmd` - corresponding to the welcome page and to this webpage. Open them and you will see how the text is simple markdown. The only exception is the meta-data at the beginning of each page, with a few descriptive items which are quite self-explicative. 
 
-LINK TO QUARTO ORG
+&nbsp;
+
+ <p align="center">
+  <a href="https://quarto.org/docs/output-formats/html-basics.html" style="background-color: #4266A1; color: #FFFFFF; padding: 30px 20px; text-decoration: none; border-radius: 5px;">
+    Guide with the HTML basics for the options you can use in the metadata
+  </a>
+</p>
+
+&nbsp;
 
 #### Notebooks
 
@@ -113,6 +121,16 @@ To see the basic example on notebook on the Quarto documentation, [click here](h
 :::{.callout-warning}
 By default, the notebook does not run when the webpage is created, and is instead kept with the shown results.
 :::
+
+&nbsp;
+
+ <p align="center">
+  <a href="https://quarto.org/docs/tools/jupyter-lab.html" style="background-color: #4266A1; color: #FFFFFF; padding: 30px 20px; text-decoration: none; border-radius: 5px;">
+    Guide with the jupyter notebooks basics
+  </a>
+</p>
+
+&nbsp;
 
 #### YML setup
 
@@ -152,4 +170,19 @@ More info about the YML file to define the website navigation can be found [in t
 Ok, now you should have gotten the very basics to get your website up and running, starting from the example in the template.
 
 Note how in the tutorial page, the interactive plots can be actively used in the documentation!
+:::
+
+:::{.callout-warning title="Rendering interactive plots"}
+The interactive plots you can see in the tutorial rendered as a webpage will not work if you do the plots on a notebook executed with google colab.
+
+This is because Colab has specific settings to do interactive plots, and those cannot work with Quarto.
+
+Thus remember to run your notebooks on jupyterlab - your plots will work also on your webpage!
+
+Also, to make your metadata and callout boxes seen while you develop a notebook, install the plugin for jupyterlab with
+
+```
+pip install jupyterlab-quarto
+```
+
 :::
